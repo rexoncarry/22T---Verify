@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22T - Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="https://discord.gg/GXWhntV9VF" target="_blank">Discord Server</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>22T - Verification</h1>
+                <img src="Suguru Geto.jpg" alt="Suguru Geto" class="profile-image">
+            </div>
+            <div id="message">
+                <p>Welcome, please verify your identity to proceed.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('home').addEventListener('click', function() {
+            document.getElementById('message').innerHTML = '<p>You have successfully authorized!</p>';
+        });
+    </script>
+</body>
+</html>
